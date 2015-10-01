@@ -5330,7 +5330,7 @@ Source: https://portal.fciconnect.com/res/en/pdffiles/doc_search/57102.pdf</desc
 <instance part="GND11" gate="1" x="27.94" y="111.76"/>
 <instance part="R1" gate="G$1" x="73.66" y="63.5" rot="R180"/>
 <instance part="LED" gate="A" x="60.96" y="60.96" rot="R90"/>
-<instance part="QR2" gate="G$1" x="162.56" y="12.7"/>
+<instance part="QR2" gate="G$1" x="160.02" y="12.7"/>
 <instance part="JP1" gate="A" x="38.1" y="147.32"/>
 <instance part="GND2" gate="1" x="66.04" y="55.88"/>
 </instances>
