@@ -86,7 +86,7 @@
 <wire x1="0" y1="22.86" x2="0" y2="0" width="0" layer="20"/>
 <text x="11.43" y="20.32" size="1.778" layer="52" rot="MR90">+5V</text>
 <text x="61.4172" y="7.112" size="1.27" layer="26" font="vector" ratio="10" rot="MR0">From PulseBlaster</text>
-<text x="42.3164" y="10.2108" size="1.27" layer="25" font="vector" ratio="10">VHDCI</text>
+<text x="43.2308" y="10.2108" size="1.27" layer="25" font="vector" ratio="10">VHDCI</text>
 <text x="53.086" y="19.558" size="1.27" layer="25" font="vector" ratio="10" rot="R270">To PTS</text>
 </plain>
 <libraries>
@@ -188,12 +188,20 @@
 <package name="INFO_BLOCK-0.076">
 <description>0.076in 10% Info Block</description>
 <text x="0" y="5.08" size="1.9304" layer="25" font="vector" ratio="10">&gt;BRD_NAME</text>
-<text x="0" y="2.54" size="1.9304" layer="25" font="vector" ratio="10">v </text>
-<text x="1.778" y="2.54" size="1.9304" layer="25" font="vector" ratio="10">&gt;REV</text>
+<text x="0" y="2.54" size="1.9304" layer="25" font="vector" ratio="10">&gt;REV</text>
 <text x="0" y="0" size="1.9304" layer="25" font="vector" ratio="10">&gt;AUTH</text>
 <text x="6.35" y="0" size="1.9304" layer="25" font="vector" ratio="10">(</text>
 <text x="14.605" y="0" size="1.9304" layer="25" font="vector" ratio="10" align="bottom-center">&gt;BRD_MON</text>
 <text x="22.86" y="0" size="1.9304" layer="25" font="vector" ratio="10" align="bottom-right">)</text>
+</package>
+<package name="INFO_BLOCK-0.05">
+<description>0.05in 10%-Standard Info Box, auto-populate Name, Revision, Initials, Month</description>
+<text x="0" y="3.81" size="1.27" layer="25" font="vector" ratio="10">&gt;BRD_NAME</text>
+<text x="0" y="1.905" size="1.27" layer="25" font="vector" ratio="10">&gt;REV</text>
+<text x="0" y="0" size="1.27" layer="25" font="vector" ratio="10">&gt;AUTH</text>
+<text x="5.08" y="0" size="1.27" layer="25" font="vector" ratio="10">(</text>
+<text x="10.795" y="0" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;BRD_MON</text>
+<text x="16.51" y="0" size="1.27" layer="25" font="vector" ratio="10" align="bottom-right">)</text>
 </package>
 </packages>
 </library>
@@ -2275,7 +2283,7 @@ chip</description>
 </libraries>
 <attributes>
 <attribute name="AUTH" value="ZSS"/>
-<attribute name="BRD_MON" value="October 2015"/>
+<attribute name="BRD_MON" value="Oct 2015"/>
 <attribute name="BRD_NAME" value="PB-PTS-Interface"/>
 <attribute name="REV" value="v2.0.0"/>
 </attributes>
@@ -2462,7 +2470,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$4" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="63.9064" y="13.0556" smashed="yes" rot="MR0"/>
 <element name="J2" library="PTS_Board_Lib" package="MOLEX-73776-0201" value="PTS-PORT" x="31.0388" y="16.2052"/>
 <element name="R1" library="resistor" package="R0805" value="~200R" x="21.9964" y="10.5664" rot="R180"/>
-<element name="U$2" library="PTS_Board_Lib" package="INFO_BLOCK-0.076" value="" x="43.6372" y="7.5692" rot="MR0"/>
 <element name="LED" library="jumper" package="JP1" value="LED" x="3.6068" y="12.446" rot="MR90"/>
 <element name="QR1" library="QR-git.io-vc0xU" package="QR-HTTP://GIT.IO/VC0XU" value="QR-HTTP://GIT.IO/VC0XU" x="4.6228" y="18.288" smashed="yes" rot="MR0">
 <attribute name="QR_DEST" value="http://git.io/vc0xU" x="8.8773" y="14.1605" size="0.889" layer="28" font="vector" ratio="15" rot="MR90"/>
@@ -2474,6 +2481,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="8.9281" y="21.3233" size="0.889" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="U$3" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="54.9656" y="13.0556" smashed="yes"/>
+<element name="U$5" library="PTS_Board_Lib" package="INFO_BLOCK-0.05" value="" x="24.6888" y="6.7056"/>
+<element name="U$6" library="PTS_Board_Lib" package="INFO_BLOCK-0.076" value="" x="40.8432" y="7.0104" rot="MR0"/>
 </elements>
 <signals>
 <signal name="PB0">
